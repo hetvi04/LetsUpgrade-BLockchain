@@ -1,0 +1,26 @@
+pragma solidity ^0.4.17 < 0.6.12;
+
+contract CarRecord {
+    string public owner;
+    uint public value;
+    string public location;
+    string carnumber;
+    string cartype;
+
+function CarRecords(string newOwner, uint newValue, string newLocation, string newCarNumber, string newCarType) public {
+    owner = newOwner;
+    value = newValue;
+    location = newLocation;
+    carnumber = newCarNumber;
+    cartype = newCarType;
+
+}
+function setCarNewDetails (string newOwner, uint newValue) public {
+    owner = newOwner;
+    value = newValue;
+
+}
+function getCarNewDetails() public view returns (string, uint) {
+   return (owner,value);
+}
+}
