@@ -1,0 +1,24 @@
+pragma solidity ^0.4.17 < 0.6.12;
+
+contract HealthRecord {
+    string public Name;
+    uint MobileNumber;
+    string public DoctorName;
+    uint DoctorID;
+    uint Age;
+    string Email;
+    string public Symptoms;
+    string public Medication;
+
+function CareRecords(string newName, uint newMobileNumber, string newDoctorName, uint newDoctorID, uint newAge, string newEmail, string newSymptoms, string newMedications) public {
+   Name = newName;
+   MobileNumber = newMobileNumber;
+   Email = newEmail;
+   DoctorName = newDoctorName;
+   DoctorID = newDoctorID;
+   Age = newAge;
+   Symptoms = newSymptoms;
+   Medication = newMedications;
+
+}
+}
